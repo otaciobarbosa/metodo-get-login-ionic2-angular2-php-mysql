@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      TELA DE LOGIN
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+<ion-list>
+
+  <ion-item>
+    <ion-label floating>LOGIN 
+      <ion-icon name="person"></ion-icon>
+  </ion-label>
+    <ion-input type="text" [(ngModel)]="user.username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>SENHA
+      <ion-icon name="medical"></ion-icon> 
+    </ion-label>   
+    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+
+</ion-list>
+<button ion-button full (click)="login()">ENTRAR</button>
+
+</ion-content>
